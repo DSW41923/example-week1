@@ -8,8 +8,7 @@
 var http = require("http");
 var port = 1337;
 var request = require("request");
-var target = prompt("Please Enter the Name of Target Page(for example: HornyDragonTW):");
-var url = "http://graph.facebook.com/" + target + "/photos?type=uploaded";
+var url = "http://graph.facebook.com/HornyDragonTW/photos?type=uploaded";
 
 http.createServer(function (req, res) {
   res.writeHeader(200, {"Content-Type": "text/html"});
