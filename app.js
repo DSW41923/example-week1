@@ -13,7 +13,7 @@ var url = "http://graph.facebook.com/HornyDragonTW/photos?type=uploaded";
 http.createServer(function (req, res) {
   res.writeHeader(200, {"Content-Type": "text/html"});
   
-  var data = "<html><head><style>div{background-color:#3366FF;}h1{text-align:center;color:#FFFFFF;}</style><title>FB PHOTO GET TESTING</title></head><body><div><h1>Here are Photos</h1></div>"
+  var data = "<html><head><style>div{background-color:#3366FF;}h1{text-align:center;color:#FFFFFF;}body{background: #A8E5E5;}</style><title>FB PHOTO GET TESTING</title></head><body><div><h1>Here are Photos</h1></div>"
   request.get(url, function (err, body, response) {
 
     response = JSON.parse(response);
