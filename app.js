@@ -19,7 +19,7 @@ http.createServer(function (req, res) {
 
     response = JSON.parse(response);
     response.data.forEach(function (val, idx) {
-      data += "<img src='" + val.images[2].source + "'width="300" height="300"" + "'>";
+      data += "<img src='" + val.images[2].source + "'width="400" height="400"" + "'>";
     });
     
     data += "</body></html>";
